@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator" >
+
+    <!--
+       起始x轴坐标
+
+           止x轴坐标
+
+           始y轴坐标
+
+           止y轴坐标
+
+           轴的坐标
+
+           轴的坐标
+    -->
+
+    <scale
+        android:duration="2500"
+        android:fromXScale="0.2"
+        android:fromYScale="0.2"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+</set>

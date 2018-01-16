@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/com.broadcom.cooee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jetty-8.1.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/wire-runtime-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ac-service-android-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/BLEasyConfig.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/okio-0.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/dd-plist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/easylink_ftc_out.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/simpleconfiglib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

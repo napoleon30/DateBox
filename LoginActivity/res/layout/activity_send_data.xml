@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sendTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送命令" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_sendText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1.0"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:maxLength="500" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_sendButoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sendData" />
+
+            <Button
+                android:id="@+id/btn_module_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="模式选择" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收返回值" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/receText"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1.0"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:maxLength="500" />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/btn_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="接收返回值"
+        />
+
+</LinearLayout>

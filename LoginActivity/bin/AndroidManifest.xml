@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.accloud.ac_service_android_demo"
+    android:versionCode="1"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".application.MainApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.AddDeviceActivity" />
+        <activity android:name=".activity.APDeviceActivity" />
+        <activity android:name=".activity.BindDeviceActivity" />
+        <activity android:name=".activity.MenuActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.SendDataActivity" />
+        <activity android:name=".activity.ConfigurationActivity" />
+        <activity android:name=".activity.ConfigDetailActivity" />
+        <activity android:name=".activity.HistoryRecordActivity" />
+        <activity android:name=".activity.ResetWifiActivity" />
+        <activity android:name=".activity.CustomBinaryActivity" />
+        <activity android:name=".activity.ThermActivity" />
+        <activity android:name=".activity.LedForFourActivity" />
+        <activity android:name=".activity.LedForTwoActivity" />
+        <activity android:name=".activity.EmergencyLightActivity" />
+        <activity
+            android:name=".activity.CustomJsonActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5950b3bdc62dca73a3001788" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="9df1a31c52019eadc6a64044990a4a44" >
+        </meta-data>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="napoleon30#loginactivity" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="test" >
+        </meta-data>
+
+        <!-- [Required] 对应"产品管理->产品列表->主域名" -->
+        <meta-data
+            android:name="major-domain"
+            android:value="ablecloud" />
+        <!-- [Required] 对应"个人信息->个人信息->开发者ID" -->
+        <meta-data
+            android:name="developer-id"
+            android:value="2" />
+        <!-- [Required] 对应"密钥对管理->全部密钥对"，选择已启用的任意一对。 -->
+        <meta-data
+            android:name="access-key"
+            android:value="43e9e31a40ad2dbe809bdb8e8170badd" />
+        <meta-data
+            android:name="secret-key"
+            android:value="e48c15c440cef1f0805dee82f450cee8" />
+
+        <activity android:name=".activity.AI6060HActivity" >
+        </activity>
+        <activity
+            android:name=".activity.DeviceNameActivity"
+            android:label="@string/title_activity_device_name"
+            android:theme="@style/DeviceNameActivityToDialog" >
+        </activity>
+        <activity
+            android:name=".activity.MCUChoiceTypeActivity"
+            android:label="@string/title_activity_mcucchoice_type" >
+        </activity>
+        <activity
+            android:name=".activity.CarActivity"
+            android:label="@string/title_activity_car" >
+        </activity>
+        <activity
+            android:name=".activity.EightToEightActivity"
+            android:label="@string/title_activity_eight_to_eight" >
+        </activity>
+        <activity
+            android:name=".activity.ColorActivity"
+            android:label="@string/title_activity_color" >
+        </activity>
+        <activity
+            android:name=".activity.PagerActivity"
+            android:label="@string/title_activity_pager" >
+        </activity>
+        <activity
+            android:name=".activity.AddMCUDeviceActivity"
+            android:label="@string/title_activity_add_mcudevice" >
+        </activity>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password" >
+        </activity>
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:label="@string/title_activity_capture" >
+        </activity>
+        <activity
+            android:name=".activity.SendAndReceive"
+            android:label="@string/title_activity_send_and_receive" >
+        </activity>
+        <activity
+            android:name=".country.CountryActivity"
+            android:label="@string/title_activity_country" >
+        </activity>
+        <activity
+            android:name=".activity.PowerActivity"
+            android:label="@string/title_activity_power" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 震动 -->
+
+</manifest>

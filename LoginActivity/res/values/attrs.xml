@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义ColorPicker -->
+    <declare-styleable name="XColorPicker">
+        <attr name="imgHeight" format="dimension"></attr>
+        <attr name="rectHeight" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="myview">
+        <attr name="recover_x" format="boolean" />
+        <attr name="recover_y" format="boolean" />
+        <attr name="locked_x" format="boolean" />
+        <attr name="locked_y" format="boolean" />
+        <attr name="position_x" format="integer" />
+        <attr name="position_y" format="integer" />
+        <attr name="opengravity" format="boolean" />
+        <attr name="orientation" format="boolean" />
+        <attr name="background" format="reference" />
+        <attr name="background1" format="reference" />
+        <attr name="background2" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="isbutton" format="boolean" />
+        <attr name="isthreebg" format="boolean" />
+        <attr name="trim_max" format="integer" />
+        <attr name="trim_progress" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="color_picker">
+
+        <!-- 背景圆的半径 -->
+        <attr name="circle_radius" format="dimension" />
+        <!-- 可滑动小球的半径 -->
+        <attr name="center_radius" format="dimension" />
+        <!-- 可滑动小球的颜色 -->
+        <attr name="center_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorOut" format="color" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RippleView">
+        <attr name="rippleColor" format="color" />
+        <attr name="alphaFactor" format="float" />
+        <attr name="hover" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AmountView">
+
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!-- <attr name="tvColor" format="color"/> -->
+        <attr name="tvTextSize" format="dimension" />
+        <attr name="btnTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
